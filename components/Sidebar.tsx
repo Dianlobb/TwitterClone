@@ -1,5 +1,5 @@
 import React from 'react'
-import SidebarRow from './sidebarRow'
+import SidebarRow from './SidebarRow'
 import {
   HomeIcon,
   UserIcon,
