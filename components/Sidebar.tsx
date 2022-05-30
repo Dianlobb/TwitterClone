@@ -13,6 +13,7 @@ import {
 import { signIn, signOut, useSession } from 'next-auth/react'
 
 function sidebar() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { data: session } = useSession();
   return (
     <div className="col-span-2 flex flex-col items-center px-4 md:items-start">
