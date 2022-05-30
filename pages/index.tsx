@@ -11,7 +11,7 @@ import { Toaster } from 'react-hot-toast';
 interface Props {
   tweets : Tweet[]
 }
-const Home: NextPage = ({tweets}:Props) => {
+const Home: NextPage<Props>  = ({tweets}:Props) => {
   
   return (
     <div className='lg:max-w-6xl mx-auto max-h-screen overflow-hidden'>
