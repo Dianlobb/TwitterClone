@@ -5,7 +5,7 @@ import Widgets from "../components/Widgets";
 import Feed from "../components/Feed";
 import { fetchTweets } from '../utils/fetchTweets';
 import { Tweet } from "../typingd"
-import { GetStaticProps } from 'next';
+import { GetServerSideProps } from 'next';
 import { Toaster } from 'react-hot-toast';
 
 interface Props {
@@ -33,7 +33,7 @@ const Home: NextPage<Props>  = ({tweets}:Props) => {
 
 export default Home
 
-export  const getServerSideProps: GetStaticProps =async () => {
+export  const getServerSideProps: GetServerSideProps =async () => {
     const  tweets = await fetchTweets()
   return{
     props:{
